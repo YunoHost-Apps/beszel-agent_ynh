@@ -34,6 +34,11 @@ yunohost service add "$app" --description="Lightweight monitoring agent" --log="
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
+if [ ! -d /var/log/$app ]; then
+    mkdir -p /var/log/$app
+    chown $app:$app /var/log/$app
+fi
+
 ynh_systemctl --service="$app" --action="start"
 
 #=================================================
