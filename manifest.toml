@@ -32,7 +32,7 @@ ram.runtime = "50M"
 
 [install]
     [install.alert]
-    type = "text"
+    type = "alert"
     style = "info"
     icon = "info-circle"
     ask.en = "This app needs to be linked to an already-installed Beszel application. In Beszel's home page, click on `+ Add System`, then fill in this form with the information from the Binary tab."
