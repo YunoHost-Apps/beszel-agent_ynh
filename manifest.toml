@@ -39,7 +39,7 @@ ram.runtime = "50M"
     ask.fr = "Cette application a besoin d'être liée à une installation existante de l'app Beszel. Dans la page principale de Beszel, cliquez sur `+ Ajouter Système`, et remplissez ce formulaire avec les information de l'onglet Binaire."
 
     [install.public_key]
-    type = "text"
+    type = "string"
     ask.en = "Beszel's public key"
     ask.fr = "Clé publique de Beszel"
 
@@ -48,8 +48,8 @@ ram.runtime = "50M"
     ask.en = "Beszel's token"
     ask.fr = "Jeton (token) de Beszel"
 
-    [install.url]
-    type = "text"
+    [install.hub_url]
+    type = "string"
     ask.en = "Beszel's URL"
     ask.fr = "URL de Beszel"
     pattern.regexp = "^https?://"
