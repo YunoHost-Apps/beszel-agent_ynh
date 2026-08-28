@@ -7,7 +7,7 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/beszel-agent"
+ExecStart=__INSTALL_DIR__/beszel-agent
 Environtment="DATA_DIR=__DATA_DIR__"
 Environtment="LISTEN=__PORT__"
 Environtment="KEY=__PUBLIC_KEY__"
