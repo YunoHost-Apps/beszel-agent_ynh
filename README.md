@@ -4,39 +4,39 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/beszel.png" width="32px" alt="Logo of Beszel">
-  Beszel, packaged for YunoHost
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/beszel-agent.png" width="32px" alt="Logo of Beszel Agent">
+  Beszel Agent, packaged for YunoHost
 </h1>
 
-Lightweight server monitoring
+Agent for the Beszel server monitor
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://www.beszel.dev/)
-[![Version: 0.18.8~ynh2](https://img.shields.io/badge/Version-0.18.8~ynh2-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/beszel/)
+[![Version: 0.18.8~ynh1](https://img.shields.io/badge/Version-0.18.8~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/beszel-agent/)
 
 <div align="center">
-<a href="https://apps.yunohost.org/app/beszel"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
-<a href="https://github.com/YunoHost-Apps/beszel_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
+<a href="https://apps.yunohost.org/app/beszel-agent"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
+<a href="https://github.com/YunoHost-Apps/beszel-agent_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
 
 ## Screenshots
-![Screenshot of Beszel](./doc/screenshots/screenshot.png)
+![Screenshot of Beszel Agent](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
-[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/beszel)](https://ci-apps.yunohost.org/ci/apps/beszel/)
+[![Automatic tests level](https://apps.yunohost.org/badge/cilevel/beszel-agent)](https://ci-apps.yunohost.org/ci/apps/beszel-agent/)
 
-🛠️ Upstream Beszel repository: <https://github.com/henrygd/beszel>
+🛠️ Upstream Beszel Agent repository: <https://github.com/henrygd/beszel>
 
-Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/beszel_ynh/tree/testing).
+Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/beszel-agent_ynh/tree/testing).
 
 The `testing` branch can be tested using:
 ```
 # fresh install:
-sudo yunohost app install https://github.com/YunoHost-Apps/beszel_ynh/tree/testing
+sudo yunohost app install https://github.com/YunoHost-Apps/beszel-agent_ynh/tree/testing
 
 # upgrade an existing install:
-sudo yunohost app upgrade beszel -u https://github.com/YunoHost-Apps/beszel_ynh/tree/testing
+sudo yunohost app upgrade beszel-agent -u https://github.com/YunoHost-Apps/beszel-agent_ynh/tree/testing
 ```
 
 ### 📚 App packaging documentation
