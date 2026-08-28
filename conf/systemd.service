@@ -1,0 +1,32 @@
+[Unit]
+Description=Beszel Agent
+After=network.target
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/beszel-agent"
+Environtment="DATA_DIR=__DATA_DIR__"
+Environtment="LISTEN=__PORT__"
+Environtment="KEY=__PUBLIC_KEY__"
+Environtment="TOKEN=__TOKEN__"
+Environtment="HUB_URL=__HUB_URL__"
+Restart=always
+RestartSec=3
+
+# Security/sandboxing settings
+KeyringMode=private
+LockPersonality=yes
+NoNewPrivileges=yes
+ProtectClock=yes
+ProtectHome=read-only
+ProtectHostname=yes
+ProtectKernelLogs=yes
+ProtectSystem=strict
+RemoveIPC=yes
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

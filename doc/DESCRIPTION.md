@@ -1,0 +1,1 @@
+Beszel is a lightweight server monitoring platform that includes Docker statistics, historical data, and alert functions. This is its agent to monitor remote servers, or the one where the Beszel Hub (server) is installed.

@@ -1,0 +1,83 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "beszel-agent"
+name = "Beszel Agent"
+description.en = "Agent for the Beszel server monitor"
+description.fr = "Agent pour le monitoring de serveurs Beszel"
+
+version = "0.18.8~ynh1"
+
+maintainers = ["tituspijean"]
+
+[upstream]
+license = "MIT"
+website = "https://www.beszel.dev/"
+admindoc = "https://beszel.dev/guide/agent-installation"
+code = "https://github.com/henrygd/beszel"
+
+[integration]
+yunohost = ">= 12.1.39"
+helpers_version = "2.1"
+architectures = [ "amd64", "arm64", "armhf" ]
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.alert]
+    type = "text"
+    style = "info"
+    icon = "info-circle"
+    ask.en = "This app needs to be linked to an already-installed Beszel application. In Beszel's home page, click on `+ Add System`, then fill in this form with the information from the Binary tab."
+    ask.fr = "Cette application a besoin d'être liée à une installation existante de l'app Beszel. Dans la page principale de Beszel, cliquez sur `+ Ajouter Système`, et remplissez ce formulaire avec les information de l'onglet Binaire."
+
+    [install.public_key]
+    type = "text"
+    ask.en = "Beszel's public key"
+    ask.fr = "Clé publique de Beszel"
+
+    [install.token]
+    type = "password"
+    ask.en = "Beszel's token"
+    ask.fr = "Jeton (token) de Beszel"
+
+    [install.url]
+    type = "text"
+    ask.en = "Beszel's URL"
+    ask.fr = "URL de Beszel"
+    pattern.regexp = "^https?://"
+    pattern.error.en = "The URL should start with https:// (or unsafely http://)."
+    pattern.error.fr = "L'URL devrait commencer par https:// (ou de manière peu sûre http://)."
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    in_subdir = false
+    amd64.url = "https://github.com/henrygd/beszel/releases/download/v0.18.8/beszel-agent_linux_amd64.tar.gz"
+    amd64.sha256 = "ea964141aa4182742475c0a75b29001fc591eb39ce0f63a33bd3cff04539bcf9"
+    arm64.url = "https://github.com/henrygd/beszel/releases/download/v0.18.8/beszel-agent_linux_arm64.tar.gz"
+    arm64.sha256 = "3790beafa133ab9bb0f1b422b59acb7fd18ac258ce4f168d299ee390ca50be5c"
+    armhf.url = "https://github.com/henrygd/beszel/releases/download/v0.18.8/beszel-agent_linux_arm.tar.gz"
+    armhf.sha256 = "9aa52e5238e03c4e326dc2829ec79c59b80897562cb82365ef1d8a6ca7ee7b0f"
+
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset.amd64 = "beszel-agent_linux_amd64.tar.gz"
+    autoupdate.asset.arm64 = "beszel-agent_linux_arm64.tar.gz"
+    autoupdate.asset.armhf = "beszel-agent_linux_arm.tar.gz"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+
+    [resources.ports]

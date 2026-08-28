@@ -1,0 +1,1 @@
+Beszel est une plateforme de surveillance de serveurs légère qui inclut des statistiques Docker, des données historiques et des fonctions d'alerte. Ceci est sont agent pour surveiller des serveurs distants, ou celui où le Hub (serveur) Beszel est installé.
