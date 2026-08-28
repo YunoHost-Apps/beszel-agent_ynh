@@ -8,11 +8,7 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=__INSTALL_DIR__/beszel-agent
-Environment="DATA_DIR=__DATA_DIR__"
-Environment="LISTEN=__PORT__"
-Environment="KEY=__PUBLIC_KEY__"
-Environment="TOKEN=__TOKEN__"
-Environment="HUB_URL=__HUB_URL__"
+EnvironmentFile=__INSTALL_DIR__/.env
 Restart=always
 RestartSec=3
 StandardOutput=append:/var/log/__APP__/__APP__.log
