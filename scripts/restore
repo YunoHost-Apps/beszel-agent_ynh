@@ -13,6 +13,7 @@ ynh_script_progression "Restoring the app main directory..."
 
 ynh_restore "$install_dir"
 ynh_restore "$data_dir"
+ynh_restore "/var/log/$app/"
 
 #=================================================
 # RESTORE SYSTEM CONFIGURATION
