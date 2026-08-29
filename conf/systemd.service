@@ -25,6 +25,9 @@ ProtectKernelLogs=yes
 ProtectSystem=strict
 RemoveIPC=yes
 RestrictSUIDSGID=true
+AmbientCapabilities=CAP_PERFMON
+AmbientCapabilities=CAP_SYS_RAWIO CAP_SYS_ADMIN
+CapabilityBoundingSet=CAP_SYS_RAWIO CAP_SYS_ADMIN
 
 [Install]
 WantedBy=multi-user.target
