@@ -38,20 +38,25 @@ ram.runtime = "50M"
     ask.en = "This app needs to be linked to an already-installed Beszel application. In Beszel's home page, click on `+ Add System`, then fill in this form with the information from the Binary tab."
     ask.fr = "Cette application a besoin d'être liée à une installation existante de l'app Beszel. Dans la page principale de Beszel, cliquez sur `+ Ajouter Système`, et remplissez ce formulaire avec les information de l'onglet Binaire."
 
+    [install.port]
+    type = "number"
+    ask.en = "Beszel server's port"
+    ask.fr = "Jeton (token) du serveur Beszel"
+
     [install.public_key]
     type = "string"
-    ask.en = "Beszel's public key"
-    ask.fr = "Clé publique de Beszel"
+    ask.en = "Beszel server's public key"
+    ask.fr = "Clé publique du serveur Beszel"
 
     [install.token]
     type = "password"
-    ask.en = "Beszel's token"
-    ask.fr = "Jeton (token) de Beszel"
+    ask.en = "Beszel server token"
+    ask.fr = "Jeton (token) du serveur Beszel"
 
     [install.hub_url]
     type = "string"
-    ask.en = "Beszel's URL"
-    ask.fr = "URL de Beszel"
+    ask.en = "Beszel server's URL"
+    ask.fr = "URL du serveur Beszel"
     pattern.regexp = "^https?://"
     pattern.error.en = "The URL should start with https:// (or unsafely http://)."
     pattern.error.fr = "L'URL devrait commencer par https:// (ou de manière peu sûre http://)."
@@ -79,5 +84,3 @@ ram.runtime = "50M"
     [resources.install_dir]
 
     [resources.data_dir]
-
-    [resources.ports]
