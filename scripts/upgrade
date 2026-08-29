@@ -41,6 +41,10 @@ if [ ! -d /var/log/$app ]; then
     chown $app:$app /var/log/$app
 fi
 
+#FIXME: that's what's recommended by the upstream documentation
+# but this may actually be unsafe: disk group has full access to filesystems
+usermod -aG disk $app
+
 ynh_systemctl --service="$app" --action="start"
 
 #=================================================
