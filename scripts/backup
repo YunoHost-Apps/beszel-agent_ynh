@@ -14,6 +14,7 @@ ynh_print_info "Declaring files to be backed up..."
 
 ynh_backup "$install_dir"
 ynh_backup "$data_dir"
+ynh_backup "/var/log/$app/"
 
 #=================================================
 # BACKUP SYSTEM CONFIGURATION
