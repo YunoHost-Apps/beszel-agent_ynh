@@ -35,8 +35,8 @@ ram.runtime = "50M"
     type = "alert"
     style = "info"
     icon = "info-circle"
-    ask.en = "This app needs to be linked to an already-installed Beszel application. In Beszel's home page, click on `+ Add System`, then fill in this form with the information from the Binary tab."
-    ask.fr = "Cette application a besoin d'être liée à une installation existante de l'app Beszel. Dans la page principale de Beszel, cliquez sur `+ Ajouter Système`, et remplissez ce formulaire avec les information de l'onglet Binaire."
+    ask.en = "This app needs to be linked to an already-installed Beszel application. In Beszel's home page, click on `+ Add System`, then fill in this form with the Public Key and Token from the Binary tab. After installation, change the Port with the reported value."
+    ask.fr = "Cette application a besoin d'être liée à une installation existante de l'app Beszel. Dans la page principale de Beszel, cliquez sur `+ Ajouter Système`, et remplissez ce formulaire avec la Clé publique et le Token de l'onglet Binaire. Après l'installation, modifiez le Port avec la valeur rapportée."
 
     [install.public_key]
     type = "string"
