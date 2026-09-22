@@ -7,7 +7,7 @@ name = "Beszel Agent"
 description.en = "Agent for the Beszel server monitor"
 description.fr = "Agent pour le monitoring de serveurs Beszel"
 
-version = "0.19.0~ynh1"
+version = "0.20.0~ynh1"
 
 maintainers = ["tituspijean"]
 
@@ -62,12 +62,12 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     in_subdir = false
-    amd64.url = "https://github.com/henrygd/beszel/releases/download/v0.19.0/beszel-agent_linux_amd64.tar.gz"
-    amd64.sha256 = "0f85891b290146b336f5c813d1e535e992da35ee79de876e920e2ec748ab732c"
-    arm64.url = "https://github.com/henrygd/beszel/releases/download/v0.19.0/beszel-agent_linux_arm64.tar.gz"
-    arm64.sha256 = "3a0b0c471506a02d8de79d03f7a45132b54010adc105c6208ffe8b8aedc1da38"
-    armhf.url = "https://github.com/henrygd/beszel/releases/download/v0.19.0/beszel-agent_linux_arm.tar.gz"
-    armhf.sha256 = "e70086a77effb44a6b142da9e6761c8fe8bd13546ca4fd1940bd15e3baf44661"
+    amd64.url = "https://github.com/henrygd/beszel/releases/download/v0.20.0/beszel-agent_linux_amd64.tar.gz"
+    amd64.sha256 = "f03b8ec7349a8133a0329ef50619bc3a97a7bb0a0e423866416ecc818cebc43c"
+    arm64.url = "https://github.com/henrygd/beszel/releases/download/v0.20.0/beszel-agent_linux_arm64.tar.gz"
+    arm64.sha256 = "dbb292d7309ca00cfd7f3d8f86480991f7c959e65af6506754a55d3e345452ab"
+    armhf.url = "https://github.com/henrygd/beszel/releases/download/v0.20.0/beszel-agent_linux_arm.tar.gz"
+    armhf.sha256 = "35f6ddd6294ea675d42edefdcaf0db8a7bcd71d5448b2f9bd02ac18c76d4a126"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "beszel-agent_linux_amd64.tar.gz"
